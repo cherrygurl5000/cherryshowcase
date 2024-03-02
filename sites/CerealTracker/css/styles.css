@@ -1,0 +1,73 @@
+#first {
+  color: red;
+}
+
+body {
+  background-image: url("../img/whiteRepeatBG2.jpg");
+  background-color: gainsboro;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.imageStack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.imageStack_item__top {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / span 8;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 50%;
+  z-index: 1;
+}
+
+.imageStack_item__bottom {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  opacity: 0.4;
+}
+
+.imageStack:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hov {
+  /*//Clip the title if it is too long
+  & + h3 {
+    white-space: nowrap;
+    width: 120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      overflow: visible;
+      background-color: white;
+      width: fit-content;
+    }
+  }*/
+}
+
+.hov:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.heading {
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=styles.css.map */

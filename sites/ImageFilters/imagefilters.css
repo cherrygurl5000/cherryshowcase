@@ -1,0 +1,92 @@
+html {
+  background: navy; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(lime, navy); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(lime, navy); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lime, navy); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lime, navy); /* Standard syntax */  
+}
+
+#exam, #rExample, #gExample, #rbExample, #bExample, #fExample {
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+  top: 45px;
+}
+
+#heading {
+  font-family: "Brush Script Std", "Brush Script MT", cursive;
+  font-weight: 520;
+  font-size: 3em;
+  background-color: darkslategray;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.examples {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0px, 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-42%, 0%);
+  bottom: 50px;
+}
+
+#canvas {
+  width: 600px;
+  margin: 20px;
+  border: 5px inset gray;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#imageFile {
+  font-weight: 500;
+  font-size: 1.2em;
+  position: relative;
+  left: 50%;
+  transform: translate(-30%, 0%);
+}
+
+.buttons {
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-28%, 0%);
+}
+
+#reset, #red, #gray, #rainbow, #blur, #fangs, #resetImage {
+  font-size:20px; 
+  background-color:gray; 
+  border: 2px outset darkslategray;
+  margin: 10px;
+  padding: 0px, 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
+p {
+  color: white;
+}
+
+#para{
+  color: black;
+  position: relative;
+  left: 50%;
+  transform: translate(-18%, 0%);
+  font-size: 20px;
+}
+
+#home {
+  border: solid black 1px;
+  padding: 5px;
+  background: darkslategray;
+  color: white;
+  text-decoration: none;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 10%;
+}

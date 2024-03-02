@@ -1,0 +1,280 @@
+#home {
+  border: solid black 1px;
+  padding: 5px;
+  background: darkslategray;
+  color: white;
+  text-decoration: none;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 0%;
+  position: absolute;
+  bottom: -40%;
+}
+body {
+  background: #ff0066;
+}
+
+.box {
+  /*background: white;*/
+  width: 600px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+}
+
+.panel {
+  position: absolute;
+  background: #cc6600;
+  width: 60%;
+  height: 96%;
+  top: 2%;
+  left: 20%;
+  border-radius: 5%;
+  border: black 1px solid;
+}
+
+.window {
+  position: absolute;
+  background: #000080;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  /*border-radius: 5%;*/
+  border: black 1px solid;
+}
+
+.bar {
+  background: #cc6600;
+  width: 4%;
+  height: 46%;
+  z-index: 3;
+  border: black 1px solid;
+}
+
+.first {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+}
+
+.second {
+  position: absolute;
+  top: 0%;
+  right: 30%;
+}
+
+.third {
+  position: absolute;
+  bottom: 0%;
+  left: 31%;
+}
+
+.fourth {
+  position: absolute;
+  bottom: 0%;
+  right: 29%;
+}
+
+.side {
+  background: #cc6600;
+  width: 100%;
+  height: 3%;
+  z-index: 3;
+  border: black 1px solid;
+}
+
+.top {
+  position: absolute;
+  top: 21%;
+  left: -0.1%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 21%;
+  left: -0.1%;
+}
+
+.horizontal {
+  background: #cc6600;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 45%;
+  left: -0.1%;
+  z-index: 4;
+  border: black 1px solid;
+}
+
+.lock {
+  background: #d6d6c2;
+  width: 6%;
+  height: 26%;
+  position: absolute;
+  bottom: 40%;
+  left: 47%;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 25%;
+}
+
+.lock1 {
+  background: #d6d6c2;
+  width: 8%;
+  height: 10%;
+  position: absolute;
+  bottom: 40%;
+  right: 42%;
+  border-radius: 25%;
+}
+
+.rain {
+  background: #0080ff;
+  width: 6%;
+  height: 5%;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 1;
+}
+
+.dot {
+  background: white;
+  width: 16%;
+  height: 15%;
+  position: absolute;
+  top: 15%;
+  left: 28%;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.one {
+  position: absolute;
+  top: 20%;
+  right: 24%;
+  -webkit-animation: drop1 1.5s infinite !important; /* Safari 4+ */
+  -moz-animation: drop1 1.5s infinite !important; /* Fx 5+ */
+  -o-animation: drop1 1.5s infinite !important; /* Opera 12+ */
+  animation: drop1 1.5s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+.two {
+  position: absolute;
+  bottom: 20%;
+  left: 24%;
+  -webkit-animation: drop2 2s infinite !important; /* Safari 4+ */
+  -moz-animation: drop2 2s infinite !important; /* Fx 5+ */
+  -o-animation: drop2 2s infinite !important; /* Opera 12+ */
+  animation: drop2 2s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+.three {
+  position: absolute;
+  top: 15%;
+  right: 42%;
+  -webkit-animation: drop3 2.2s infinite !important; /* Safari 4+ */
+  -moz-animation: drop3 2.2s infinite !important; /* Fx 5+ */
+  -o-animation: drop3 2.2s infinite !important; /* Opera 12+ */
+  animation: drop3 2.2s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+.four {
+  position: absolute;
+  bottom: 30%;
+  left: 39%;
+  -webkit-animation: drop4 1.75s infinite !important; /* Safari 4+ */
+  -moz-animation: drop4 1.75s infinite !important; /* Fx 5+ */
+  -o-animation: drop4 1.75s infinite !important; /* Opera 12+ */
+  animation: drop4 1.75s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+.five {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-animation: drop5 2.4s infinite !important; /* Safari 4+ */
+  -moz-animation: drop5 2.4s infinite !important; /* Fx 5+ */
+  -o-animation: drop5 2.4s infinite !important; /* Opera 12+ */
+  animation: drop5 2.4s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+.six {
+  position: absolute;
+  bottom: 30%;
+  right: 8%;
+  -webkit-animation: drop6 1.6s infinite !important; /* Safari 4+ */
+  -moz-animation: drop6 1.6s infinite !important; /* Fx 5+ */
+  -o-animation: drop6 1.6s infinite !important; /* Opera 12+ */
+  animation: drop6 1.6s infinite !important; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes drop1 {
+  0%   { top: 20%; }
+  25% { top: 30%; }
+  50% {top: 50%;}
+  75% { top: 70%; }
+  100% {top: 90%;}
+}
+
+@-webkit-keyframes drop2 {
+  0%   { top: 10%; }
+  25% { top: 25%; }
+  50% {top: 45%;}
+  75% { top: 65%; }
+  100% {top: 85%;}
+}
+
+@-webkit-keyframes drop3 {
+  0%   { top: 15%; }
+  25% { top: 35%; }
+  50% {top: 55%;}
+  75% { top: 75%; }
+  100% {top: 95%;}
+}
+
+@-webkit-keyframes drop4 {
+  0%   { top: 5%; }
+  25% { top: 20%; }
+  50% {top: 40%;}
+  75% { top: 60%; }
+  100% {top: 80%;}
+}
+
+@-webkit-keyframes drop5 {
+  0%   { top: 30%; }
+  25% { top: 45%; }
+  50% {top: 60%;}
+  75% { top: 75%; }
+  100% {top: 90%;}
+}
+
+@-webkit-keyframes drop6 {
+  0%   { top: 12%; }
+  25% { top: 30%; }
+  50% {top: 48%;}
+  75% { top: 66%; }
+  100% {top: 84%;}
+}
+
+/*Styling for mobile screens*/
+@media only screen and (max-width: 1500px) {
+    .box {
+        position: relative;
+        /*background: white;*/
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        margin-top: 8%;
+    }
+}

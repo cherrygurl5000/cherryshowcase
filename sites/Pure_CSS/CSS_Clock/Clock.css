@@ -1,0 +1,249 @@
+#home {
+  border: solid black 1px;
+  padding: 5px;
+  background: darkslategray;
+  color: white;
+  text-decoration: none;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 0%;
+}
+
+body {
+  background: gray;
+}
+
+.box {
+  position: relative;
+  height: 450px;
+  width: 600px;
+  /*border: red solid 2px;*/
+  margin: auto;
+}
+
+.top {
+  position: absolute;
+  height: 45%;
+  width: 97%;
+  background: darkslategray;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  border: white 2px solid;
+}
+
+.top-line {
+  position: absolute;
+  height: 56%;
+  width: 0%;
+  background: black;
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  top: -5%;
+  left: 12%;
+  border: white 1px solid;
+}
+
+.front {
+  position: absolute;
+  height: 45%;
+  width: 73%;
+  background: darkslategray;
+  top: 45%;
+  left: 0%;
+  border: white 2px solid;
+}
+.side-right {
+  position: absolute;
+  height: 90%;
+  width: 95%;
+  background: darkslategray;
+  -webkit-clip-path: polygon(25% 1%, 26% 51%, 0 100%, 0% 50%);
+clip-path: polygon(25% 1%, 26% 51%, 0 100%, 0% 50%);
+  top: 1%;
+  right: -69%;
+  border: white 2px solid;
+}
+
+.side-line {
+  position: absolute;
+  height: 54%;
+  width: 0%;
+  background: black;
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  top: -4%;
+  right: 14.5%;
+  border: white 1px solid;
+}
+
+.button-top {
+  position: absolute;
+  height: 15%;
+  width: 12%;
+  background: black;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  border: darkslategray 2px solid;
+  top: 28%;
+  left: 19%;
+}
+
+.button-front {
+  position: absolute;
+  height: 6%;
+  width: 8.5%;
+  background: darkslategray;
+  top: 44%;
+  left: 19.5%;
+  border: black 2px solid;
+}
+
+.button-right {
+  position: absolute;
+  height: 7.5%;
+  width: 0%;
+  background: black;
+  top: 29%;
+  left: 30.8%;
+  border: black 2px solid;
+}
+
+.button-side {
+  position: absolute;
+  height: 0%;
+  width: 5%;
+  background: green;
+  top: 44%;
+  left: 27.3%;
+  border: black 1px solid;
+  transform: rotate(-62deg);
+  -webkit-transform: rotate(-62deg);
+}
+
+.button1 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.button2 {
+  position: absolute;
+  top: 5%;
+  left: 18%;
+  width: 100%;
+  height: 100%;
+}
+
+.button3 {
+  position: absolute;
+  top: 5%;
+  left: 38%;
+  width: 100%;
+  height: 100%;
+}
+
+.button4 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.button5 {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  background: black;
+  top: 70%;
+  left: 28%;
+  border-radius: 30%;
+}
+
+.clock {
+  position: absolute;
+  top: -88%;
+  left: 32%;
+  color: white;
+}
+
+.hours {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  background: #0d0d0d;
+  top: 20%;
+  left: 5%;
+  border-radius: 10%;
+}
+
+#hours {
+  font-family: 'Changa';
+  font-size: 700%;
+  color: green;
+  position: absolute;
+  top: -36%;
+  margin: auto;
+}
+
+.minutes {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  background: #0d0d0d;
+  top: 20%;
+  left: 45%;
+  border-radius: 10%;
+}
+
+#minutes {
+  font-family: 'Changa';
+  font-size: 700%;
+  color: green;
+  position: absolute;
+  top: -36%;
+  margin: auto;
+}
+
+.meridiem {
+  position: absolute;
+  width: 15%;
+  height: 30%;
+  background: #0d0d0d;
+  top: 35%;
+  right: 5%;
+  border-radius: 10%;
+  font-family: 'Changa';
+}
+
+#meridiem {
+  font-family: 'Changa';
+  font-size: 300%;
+  color: green;
+  position: absolute;
+  margin: auto;
+  top: -20%;
+}
+
+.top-dot {
+  position: absolute;
+  width: 5%;
+  height: 10%;
+  background: #000;
+  top: 35%;
+  left: 37.4%;
+  border-radius: 50%;
+}
+
+.bottom-dot {
+  position: absolute;
+  width: 5%;
+  height: 10%;
+  background: #000;
+  bottom: 35%;
+  left: 37.4%;
+  border-radius: 50%;
+}

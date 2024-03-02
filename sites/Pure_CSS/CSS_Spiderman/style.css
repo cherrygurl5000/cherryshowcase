@@ -1,0 +1,511 @@
+body {
+  background-color: #0080FF;
+}
+.main {
+  width: 450px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head {
+  width: 100%;
+  height: 50%;
+  background: red;
+  border-radius: 50%;
+}
+.eye-left {
+  background-color: black;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  position: relative;
+  top: 180px;
+  left: 85.5px;
+  z-index: 11;
+}
+.eye-left-top {
+  width: 121.5px;
+  height: 121.5px;
+  background-color: black;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-35deg);
+  position: relative;
+  top: -67.5px;
+  left: -44.5px;
+}
+.eye-right {
+  background-color: black;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  position: relative;
+  top: 45px;
+  left: 234px;
+  z-index: 11;
+}
+.eye-right-top {
+  width: 121.5px;
+  height: 121.5px;
+  background-color: black;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(35deg);
+  position: relative;
+  top: -67px;
+  left: 59px;
+}
+.pupil {
+  background-color: white;
+  width: 121.5px;
+  height: 121.5px;
+  border-radius: 50%;
+  position: relative;
+  top: -114.7px;
+  left: 6.8px;
+}
+.pupil-top-left {
+  width: 109.4px;
+  height: 109.4px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
+  top: 17.6px;
+  left: 5.4px;
+}
+.pupil-top-right {
+  width: 109.4px;
+  height: 109.4px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
+  top: 18.9px;
+  left: 5.4px;
+}
+
+.the-body {
+  background-color: red;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: -5%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+.circ-left {
+  width: 30%;
+  height: 75%;
+  background-color: blue;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 50%;
+  position: relative;
+  top: 20%;
+  left: 0%;
+}
+.circ-right {
+  width: 30%;
+  height: 75%;
+  background-color: blue;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 25%;
+  position: relative;
+  top: -55%;
+  left: 70%;
+}
+.arm-left {
+  background-image: linear-gradient(-10deg, red 33%, blue 33%, blue 68%, red 68%);
+  width: 25%;
+  height: 55%;
+  position: relative;
+  top: -148%;
+  left: -32%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(80deg);
+  border-top: black 2px solid;
+}
+.arm-right {
+  background-image: linear-gradient(10deg, red 33%, blue 33%, blue 68%, red 68%);
+  width: 25%;
+  height: 55%;
+  position: relative;
+  top: -204%;
+  left: 107%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(-80deg);
+  border-top: black 2px solid;
+}
+.leg-left {
+  background-image: linear-gradient(red 23%, blue 23%, blue 68%, red 68%);
+  width: 35%;
+  height: 55%;
+  position: relative;
+  top: -163%;
+  left: 5%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(6deg);
+  border-top: black 2px solid;
+}
+.leg-right {
+  background-image: linear-gradient(red 23%, blue 23%, blue 68%, red 68%);
+  width: 35%;
+  height: 55%;
+  position: relative;
+  top: -219%;
+  left: 59%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(-6deg);
+  border-top: black 2px solid;
+}
+
+.line1{
+  width: 0.5%;
+  height: 95%;
+  background: black;
+  display: inline;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  border-radius: 50%;
+  z-index: 10;
+}
+.line2{
+  width: 0.3%;
+  height: 50%;
+  background: black;
+  position: relative;
+  left: 52%;
+  top: -194%;
+  border-radius: 50%;
+  transform: rotate(40deg);
+  z-index: 10;
+}
+.line3{
+  width: 0.3%;
+  height: 50%;
+  background: black;
+  position: relative;
+  left: 48%;
+  top: -244%;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  z-index: 10;
+}
+.line4{
+  width: 0.3%;
+  height: 50%;
+  background: black;
+  position: relative;
+  left: 39.5%;
+  top: -250%;
+  border-radius: 50%;
+  transform: rotate(12deg);
+  z-index: 10;
+}
+.line5{
+  width: 0.3%;
+  height: 50%;
+  background: black;
+  position: relative;
+  left: 60.5%;
+  top: -300.5%;
+  border-radius: 50%;
+  transform: rotate(-12deg);
+  z-index: 10;
+}
+.line6{
+  width: 0.3%;
+  height: 13%;
+  background: black;
+  position: relative;
+  left: 28%;
+  top: -350.8%;
+  border-radius: 50%;
+  transform: rotate(40deg);
+  z-index: 10;
+}
+.line7{
+  width: 0.3%;
+  height: 13%;
+  background: black;
+  position: relative;
+  left: 72%;
+  top: -363.4%;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  z-index: 10;
+}
+.circ1 {
+  width: 10%;
+  height: 15%;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 40%;
+  top: 12%;
+  transform: rotate(-20deg);
+}
+.circ2 {
+  width: 10%;
+  height: 15%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 12%;
+  transform: rotate(25deg);
+}
+.circ3 {
+  width: 9%;
+  height: 15%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 33%;
+  top: 21%;
+  transform: rotate(-30deg);
+}
+.circ4 {
+  width: 8%;
+  height: 15%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 58.5%;
+  top: 20%;
+  transform: rotate(25deg);
+}
+.circ5 {
+  width: 5%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 45%;
+  top: 28%;
+  transform: rotate(-20deg);
+}
+.circ6 {
+  width: 5%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 28%;
+  transform: rotate(25deg);
+}
+.circ7 {
+  width: 12%;
+  height: 15%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 34%;
+  top: 29.4%;
+  transform: rotate(-25deg);
+}
+.circ8 {
+  width: 12%;
+  height: 15%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 54.2%;
+  top: 29%;
+  transform: rotate(25deg);
+}
+.circ9 {
+  width: 4%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 46%;
+  top: 48%;
+  transform: rotate(190deg);
+  z-index: 20;
+}
+.circ10 {
+  width: 4%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 48%;
+  transform: rotate(-195deg);
+  z-index: 20;
+}
+.circ11 {
+  width: 6%;
+  height: 8%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 38%;
+  top: 51%;
+  transform: rotate(185deg);
+}
+.circ12 {
+  width: 6%;
+  height: 8%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 56%;
+  top: 50%;
+  transform: rotate(-182deg);
+}
+.circ13 {
+  width: 6%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 44%;
+  top: 53%;
+  transform: rotate(190deg);
+  z-index: 20;
+}
+.circ14 {
+  width: 6%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 53%;
+  transform: rotate(-200deg);
+  z-index: 20;
+}
+.circ15 {
+  width: 8%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 101%;
+  transform: rotate(-200deg);
+  z-index: 20;
+}
+.circ16 {
+  width: 8%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 42%;
+  top: 101%;
+  transform: rotate(195deg);
+  z-index: 20;
+}
+.circ17 {
+  width: 7%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 89%;
+  transform: rotate(-205deg);
+  z-index: 20;
+}
+.circ18 {
+  width: 7%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 43.2%;
+  top: 89%;
+  transform: rotate(200deg);
+  z-index: 20;
+}
+.circ19 {
+  width: 8%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 76%;
+  transform: rotate(-205deg);
+  z-index: 20;
+}
+.circ20 {
+  width: 8%;
+  height: 6%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 42%;
+  top: 76%;
+  transform: rotate(200deg);
+  z-index: 20;
+}
+.circ21 {
+  width: 9%;
+  height: 5%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 50%;
+  top: 66%;
+  transform: rotate(-200deg);
+  z-index: 20;
+}
+.circ22 {
+  width: 9%;
+  height: 5%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 41%;
+  top: 66.5%;
+  transform: rotate(195deg);
+  z-index: 20;
+}
+.circ23 {
+  width: 5%;
+  height: 5%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 58%;
+  top: 61.5%;
+  transform: rotate(-215deg);
+  z-index: 20;
+}
+.circ24 {
+  width: 5.3%;
+  height: 8%;
+  position: relative;
+  border-radius: 50%;
+  border-bottom: black solid 5px;
+  left: 36.2%;
+  top: 61%;
+  transform: rotate(210deg);
+  z-index: 20;
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7cdbf977a6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Stylesheets-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="pics/logo-icon.ico" type="image/x-icon" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>Talent Showcase</title>
+  </head>
+
+  <body class="bgBody">
+    <div class="container mt-md-5">
+      <div class="fullLogo mt-3 mb-3">
+        <object id="logo" type="image/svg+xml" data="drawing.svg">
+          <img
+            src="pics/drawing.svg"
+            alt="Logo"
+            class="img-fluid mx-auto d-block"
+          />
+        </object>
+      </div>
+
+      <div class="row justify-content-around mb-3 buttons">
+        <button
+          type="button"
+          id="about"
+          class="rounded-pill"
+          onclick="window.location.href='about.html';"
+        >
+          About Me
+        </button>
+        <button
+          type="button"
+          id="contact"
+          class="rounded-pill"
+          onclick="window.location.href='contact.html';"
+        >
+          Contact Me
+        </button>
+      </div>
+
+      <div class="row block">
+        <div class="sites col-12 col-md-6">
+          <div class="mb-4 sites-summary">
+            <p>
+              User Experience is the most important factor in Web Design. With a
+              mobile-first mentality, these sites were created for versatility
+              and usability.
+            </p>
+          </div>
+          <div class="sites-clients">
+            <div class="col-6">
+              <div class="text-center mx-auto">
+                <a href="https://levelupsessions.com/" target="_blank">
+                  <img
+                    src="pics/Level_Screenshot.jpg"
+                    alt="Level"
+                    class="img-fluid mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#levelModal">
+                  <i class="fas fa-align-justify"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto">
+                <a
+                  href="https://cherryshowcase.click/sites/CremeDeLaCreme/"
+                  target="_blank"
+                >
+                  <img
+                    src="pics/CDLC.jpg"
+                    alt="Creme De La Creme Auto Spa"
+                    class="img-fluid mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#cdlcModal">
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto mt-4">
+                <a href="https://cherryshowcase.click/sites/cherryscarries/html/" target="_blank">
+                  <img
+                    src="pics/cherrysCarries.png"
+                    alt="Cherrys Carries Transport"
+                    class="img-fluid mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#cctModal">
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto mt-4">
+                <a href="https://cherryshowcase.click/sites/CerealTracker/html/" target="_blank">
+                  <img
+                    src="pics/cerealTracker.png"
+                    alt="Cereal Tracker"
+                    class="img-fluid mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#cerealModal">
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="levelModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Level Up Sessions</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Level Up Sessions frontend, e-commerce, branding, logo
+                    design, and color scheme were implemented to increase sales and
+                    establish brand identity for the company.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="cdlcModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">CDLC Auto Spa</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Cr&#1104;me de la Cr&#1104;me Auto Spa's frontend was designed to
+                    increase website traffic and to add ease of access for
+                    booking and price estimation for current and prospective
+                    customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="cctModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Cherrys Carries Transport</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Cherrys Carries Transport's frontend was carefully crafted
+                    to increase traffic and engage users in booking
+                    transportation for their vehicles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="cerealModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Cereal Tracker</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    This Cereal Tracker keeps track of the cereal as it is eaten. It 
+                    allows for adding and deleting cereals as they are purchased. Cereals 
+                    can also be deleted as needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sites col-12 col-md-6">
+          <div class="py-1 mb-4 sites-summary">
+            <p>
+              Static pages make up some of the most dynamic sites. Here are some
+              examples of the usefulness of uniform pages.
+            </p>
+          </div>
+          <div class="sites-statics justify-content-around">
+            <div class="col-6">
+              <div class="text-center mx-auto">
+                <a href="https://cherryshowcase.click/sites/dinoabc/html" target="_blank">
+                  <img
+                    src="pics/DinoABC.jpg"
+                    alt="Dinosaur ABC"
+                    class="img-fluid mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#dinoModal">
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto">
+                <a href="sites/PeriodicTable/index.html" target="_blank">
+                  <img
+                    src="pics/PeriodicTable.jpg"
+                    alt="Logo"
+                    class="img-fluid d-block mx-auto mb-2"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a
+                  class="cmod"
+                  data-toggle="modal"
+                  data-target="#periodicModal"
+                >
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto mt-4">
+                <a href="sites/ImageFilters/index.html" target="_blank">
+                  <img
+                    src="pics/ImageFilters.jpg"
+                    alt="Logo"
+                    class="img-fluid d-block mx-auto mr-1 mb-3"
+                  />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#filtersModal">
+                  <i class="fas fa-align-justify"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center mx-auto">
+                <a href="sites/DBZ/Home.html" target="_blank">
+                  <img src="pics/DBZ.jpg" alt="Logo" class="mt-4 mb-3" />
+                </a>
+              </div>
+              <div class="text-center mx-auto my-2">
+                <a class="cmod" data-toggle="modal" data-target="#DBZModal">
+                  <i class="fas fa-align-justify"></i> Details</a
+                >
+              </div>
+            </div>
+
+            <div id="dinoModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Dino ABC</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Website used for engaging young learners by teaching
+                      letters and sounds using dinosaurs. It also offers
+                      interesting dinosaur facts!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="periodicModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Periodic Table</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A periodic table designed for a quick reference of the
+                    elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="DBZModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Dragon Ball Z</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    My first attempt at a responsive website inspired by Dragon
+                    Ball Z.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="filtersModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Inspired Image Filters</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Upload an image and play around with the filters to see your
+                    image in a new light!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row block justify-content-around text-center">
+        <div class="sites col-12 mt-md-5">
+          <div class="sites-summary mb-4">
+            <p>
+              CSS is a very <span class="change">STYLISH</span> language! When
+              used methodically, you can create some very powerful images. A few
+              examples of how I used Pure CSS to create drawings and animations
+              are shown here.
+            </p>
+          </div>
+
+          <div class="sites-users justify-content-around hide">
+            <a href="sites/CSS_Clock/index.html" target="_blank" class="col-6">
+              <img
+                src="pics/CSSClock.jpg"
+                alt="CSS Clock Image"
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="sites/CSS_Mickey+Minnie/index.html"
+              target="_blank"
+              class="col-6"
+            >
+              <img
+                src="pics/CSSMinnie.jpg"
+                alt="CSS Mickey and Minnie Image"
+                class="img-fluid"
+              />
+            </a>
+            <span class="col-6 mt-2">
+              <a class="cmod" data-toggle="modal" data-target="#cdlcModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+            <span class="col-6 mt-2">
+              <a class="cmod" data-toggle="modal" data-target="#dinoModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+
+            <a href="sites/CSS_Window/index.html" target="_blank" class="col-6">
+              <img
+                src="pics/Window.jpg"
+                alt="CSS Window Image"
+                class="mt-4 mt-md-0"
+                class="img-fluid"
+              />
+            </a>
+            <a href="sites/Tires/index.html" target="_blank" class="col-6">
+              <img
+                src="pics/Tire2.jpg"
+                alt="CSS Tires Image"
+                class="mt-4 mt-md-0"
+                class="img-fluid"
+              />
+            </a>
+
+            <span class="col-6 mt-2">
+              <a class="cmod" data-toggle="modal" data-target="#windowModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+            <span class="col-6 mt-2">
+              <a class="cmod" data-toggle="modal" data-target="#tiresModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+          </div>
+          <div class="row justify-content-around text-center mt-3 unhide">
+            <a href="sites/CSS_Clock/index.html" target="_blank" class="col-3">
+              <img
+                src="pics/CSSClock.jpg"
+                alt="CSS Clock Image"
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="sites/CSS_Mickey+Minnie/index.html"
+              target="_blank"
+              class="col-3"
+            >
+              <img
+                src="pics/CSSMinnie.jpg"
+                alt="CSS Mickey and Minnie Image"
+                class="img-fluid"
+              />
+            </a>
+            <a href="sites/CSS_Window/index.html" target="_blank" class="col-3">
+              <img
+                src="pics/Window.jpg"
+                alt="CSS Window Image"
+                class="img-fluid"
+              />
+            </a>
+            <a href="sites/Tires/index.html" target="_blank" class="col-3">
+              <img
+                src="pics/Tire2.jpg"
+                alt="CSS Tires Image"
+                class="img-fluid"
+              />
+            </a>
+
+            <span class="col-3 mt-3">
+              <a class="cmod" data-toggle="modal" data-target="#clockModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+            <span class="col-3 mt-3">
+              <a class="cmod" data-toggle="modal" data-target="#mmModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+            <span class="col-3 mt-3">
+              <a class="cmod" data-toggle="modal" data-target="#windowModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+            <span class="col-3 mt-3">
+              <a class="cmod" data-toggle="modal" data-target="#tiresModal">
+                <i class="fas fa-align-justify"></i> Details</a
+              >
+            </span>
+          </div>
+
+          <div id="clockModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">CSS Clock</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A clock that gives the current time but designed using Pure
+                    CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mmModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Mickey and Minnie</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Mickey and Minnie intertwined using Pure CSS to display
+                    them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="windowModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">CSS Window</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>A window on a rainy day made from Pure CSS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tiresModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">CSS Tires</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Pure CSS creation of spinning tires. They are set to pause
+                    and stop for a better view of the rims within the tires.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="row justify-content-around mb-3 mt-5">
+        <a href="#">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
+      </footer>
+    </div>
+
+    <!-- Include jQuery, Bootstrap, and popper libraries along with your js pages -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/talent.js"></script>
+  </body>
+</html>

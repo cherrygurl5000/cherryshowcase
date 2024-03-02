@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/7cdbf977a6.js" crossorigin="anonymous"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="pics/logo-icon.ico" type="image/x-icon" />
+	<link href="css/main.css" rel="stylesheet"/>
+
+	<title>Contact Me</title>
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+          });
+        };
+      </script>
+
+
+</head>
+
+<body class="ctBody">
+
+    <div class="headline container-fluid row mx-auto">
+        <!--Logo link to the homepage-->
+        <div class="col-6 col-md-3 mb-3 align-self-center order-1">
+            <a href="index.html"><img id="logo" class="img-fluid d-block mt-2 mx-auto" src="pics/drawing.svg" alt="Logo"></a>
+        </div>
+    
+        <div class="col-12 col-md-6 text-center align-self-center order-3 order-md-2">
+            <h1 class="conTitle mx-auto rounded">Contact Me</h1>
+        </div>
+
+        <div class="col-6 col-md-3 buttons align-self-center order-2 order-md-3">
+            <button type="button" id="about" class="rounded-pill" onclick="window.location.href='about.html';" >About Me</button>
+        </div>
+    
+    </div>
+
+    <!--Main div to hold all information-->
+	<div class="container">
+
+        
+        
+        <h6 class="tBG text-md-center p-2">Feel free to contact me via <a href="https://www.linkedin.com/in/stephanie-c-cherry">LinkedIn </a>
+            using the icon below or the Contact Form below that.</h6>
+    
+        <div class="links text-center my-2">
+            <a href="https://www.linkedin.com/in/stephanie-c-cherry"><i class="fa fa-linkedin"></i></a>
+        </div>
+    
+        <div class="theForm mx-auto container pt-3">
+            <form action="" method="post">
+                <div class="row">
+                    <label for="nameField" class="name col-3 mr-1" id="nameID">Name:*</label>
+                    <input type="text" id="nameField" class="col-8" placeholder="Your Name" required/>
+                </div>
+                <div class="row">
+                    <label for="compField" class="name col-3 mr-1" id="compID">Company: </label>
+                    <input type="text" id="compField" class="col-8" placeholder="Your Company"/>
+                </div>
+                <div class="row">
+                    <label for="emailField" class="name col-3 mr-1" id="emailID">Email:*</label>
+                    <input type="email" id="emailField" class="col-8" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Your Email" required/>
+                </div>
+                <div class="row">
+                    <label for="phoneField" class="name col-3 mr-1" id="phoneID">Phone: <br />
+                    <!-- <span style="font-size: xx-small;">(format: <br />xxx-xxx-xxxx) </span> -->
+                    </label> 
+                    <input type="tel" id="phoneField" class="col-8" pattern="\d{3}-\d{3}-\d{4}" placeholder="Enter Phone Number" /><br />
+                </div>
+                <div class="row">
+                    <label for="msgField" class="name col-3" id="msgID">Message: </label>
+                    <textarea id="msgField" class="mx-auto" rows="20" cols="42" placeholder="Write me about anything: projects, projects, or even projects. I'd love to hear from you!"></textarea>
+                </div>
+                <div class="row">
+                    <label for="html_element" id="image">Image Verification: </label>
+                </div>
+                <div id="html_element" class="justify-content-center"></div>
+                <div class="buttons row justify-content-around my-3">
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="mail()">Send</button>
+                </div>
+            </form>
+
+            <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer></script> -->
+
+        </div>
+
+        <footer class="row justify-content-around mb-3 mt-5">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#">Contact Me</a>
+        </footer>
+
+
+    <!--End main div-->
+    </div>
+
+    <!--Javascript for the site-->
+    <script src="js/talent.js"></script>
+
+</body>
+</html>

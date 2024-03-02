@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Filters</title>
+  
+  
+  
+    <link rel="stylesheet" href="imagefilters.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+</head>
+
+<body>
+
+  
+
+
+<h1 id="heading"> <span style='color:darkblue; '>Inspired</span><span style='color:maroon;font-family:Calibri;'> Image</span><span style='color:darkblue;'> Filters</span></h1>
+
+<p id="para">Upload any image from your computer, then add the image filters below.</p>
+
+<div id="mainCanvas">
+  <canvas id="canvas">
+  </canvas>
+  <br/>
+  <input type="file" id="imageFile" multiple="false" accept="image/*" onchange="uploadFile()">
+</div>
+
+<div class="buttons">
+  <input type="button" id="reset" value="Reset" onclick="resetCanvas()">
+  <input type="button" id="red" value="Red Filter" onclick="redFilter()">
+  <input type="button" id="gray" value="Grayscale" onclick="grayscale()">
+  <input type="button" id="rainbow" value="Rainbow" onclick="rainbow()">
+  <input type="button" id="blur" value="Blurred" onclick="blurFilter()">
+  <input type="button" id="fangs" value="Add Fangs" onclick="teeth()">
+  <input type="button" id="resetImage" value="Reset Image" onclick="resetImage()">
+</div>
+
+<p>Webpage created by Stephanie</p>
+
+<a href="http://www.cherryshowcase.ml/" id="home">Portfolio Home</a>
+  
+  
+
+
+<script  src="cs101/cs101.js"></script>
+<script  src="cs101/SimpleImage.js"></script>
+<script  src="imagefilters.js"></script>
+
+
+
+
+</body>
+
+</html>

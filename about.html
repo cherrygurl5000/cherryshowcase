@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/7cdbf977a6.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Shadows Into Light" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="pics/logo-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <title>About Me</title>
+
+  </head>
+  <body class="abBody">
+    <div class="container">
+
+      <!--Jumbotron for the logo and contact buttons-->
+      <div class="jumbotron justify-content-around row mt-4 rounded">
+        <div class="col-6 col-md-3 mb-3 order-1">
+          <!--Logo returns to the home page-->
+          <a href="index.html">
+            <img id="logo" class="img-fluid d-block mx-auto" src="pics/drawing.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="col-12 col-md-6 text-center align-self-center justify-content-center order-3 order-md-2">
+          <h1 class="me font-weight-bold">
+            <span class="orange">This</span> <span class="blue">is</span>
+            <span class="orange">M</span><span class="blue">E</span>
+          </h1>
+        </div>
+        <!--Link to the contact page-->
+        <div class="col-6 col-md-3 buttons align-self-center order-2 order-md-3">
+          <button type="button" id="contact" class="rounded-pill" onclick="window.location.href='contact.html';">Contact Me</button>
+        </div>
+      </div>
+
+      <!--Carousel for coding quotes-->
+      <div class="row my-4">
+        <div id="quoteCarousel" class="carousel slide carousel-fade rounded quotes" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#quoteCarousel" data-slide-to="0" class="active rounded-circle"></li>
+            <li data-target="#quoteCarousel" data-slide-to="1" class="rounded-circle"></li>
+            <li data-target="#quoteCarousel" data-slide-to="2" class="rounded-circle"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item mx-auto active">
+              <h4 class="pt-4 pt-md-5 pb-2 px-4">If you can write "hello world" you can change the world.</h4>
+              <h6 class="float-right mr-4">~ Raghu Venkatesh</h6>
+            </div>
+            <div class="carousel-item mx-auto">
+              <h5 class="pt-2 pt-md-5 pb-2 px-4">I'm a programmer. I like programming. And the best way I've found
+                to have a positive impact on code is to write it.</h5>
+              <h6 class="float-right mr-4 text-center">~ Robert C. Martin <br/> Clean Architecture</h6>
+            </div>
+            <div class="carousel-item mx-auto">
+              <h5 class="pt-2 pt-md-5 pb-2 px-4">Some of the best programming is done on paper, really. Putting it
+                into the computer is just a minor detail.</h5>
+                <h6 class="float-right mr-4 text-center">~ Max Kanat-Alexander <br/>Code Simplicity: The Fundamentals of Software</h6><div class="float-none"></div>
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#quoteCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#quoteCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+      </div>
+
+      <!--The about me section with profile picture-->
+      <div class="mb-5 rounded p-3 p-md-5 row justify-content-center about">
+        <img src="pics/ProfilePic.jpg" class="float-md-right mb-4 rounded thepic" id="first" alt="Profile Picture" />
+        <p>Hey, my name is Stephanie and I’m an Electronic Engineer with a passion for Front
+          End Development. Currently, I’m looking for a permanent position in the Web
+          Development World where I can continue to utilize the skills that I have learned.
+        </p>
+        <p>My main focus has been on PHP, HTML, SCSS/CSS, JavaScript/jQuery, Git, and SQL. 
+          Prototyping and wireframing have been completed using Justinmind Prototyper, 
+          Mockplus Prototyper, and Canva Design. From there I complete the vision using my 
+          web design acumen. </p>
+          <p>After being exposed to coding while earning my Electrical Engineering degree, I 
+            did not take an immediate interest in it. I began learning more about coding as a 
+            hobby and grew a fondness for learning the languages. 
+          </p>
+          <p>Most of my focus has been 
+            on CSS images, but I also enjoy working with people to help their vision
+            come to life. The thing I enjoyed most about engineering was creating a
+            product from beginning to end and ensuring that the client was happy
+            with their final product. I have been able to feel that same sense of ownership in 
+            producing scalable code for my clients and their businesses. I take pride in my 
+            products and I enjoy exceeding the expectations of my customers.
+          </p>
+          <p>Coding makes me happy. When I’m having a bad day, I can work on a mini
+            coding project and genuinely be at peace. I’ll work on the same issue
+            for hours at a time and still be interested in finding different ways to
+            solve it. I’ll start with an end time in mind, then find that hours have
+            passed and I have to force myself to stop. Working with code is what I
+            truly enjoy doing on a regular basis. I hope that I am able to work with 
+            you and surpass your expectancies. 
+          </p>
+          <p>Please check out some of my 
+            <a href="index.html" alt="Link to home page">projects</a> and 
+            <a href="Resume.pdf" alt="Link to my Resume">my resume</a>. And if you have any 
+            questions or comments, please feel free to 
+            <a href="contact.html">contact me</a> or to check out my 
+            <a href="https://www.linkedin.com/in/stephanie-c-cherry" id="LinkedIn" alt="LinkedIn Profiled">
+              LinkedIn page
+            </a>.
+          </p>
+          <p>Thanks for your time, and I look forward to hearing from you!</p>
+      </div>
+
+      <footer class="row justify-content-around mb-3 mt-5">
+        <a href="index.html">Home</a>
+        <a href="#">About Me</a>
+        <a href="contact.html">Contact Me</a>
+      </footer>
+
+
+    <!--End of main div-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/talent.js"></script>
+
+  </body>
+</html>

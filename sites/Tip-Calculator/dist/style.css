@@ -1,0 +1,80 @@
+#home {
+  border: solid black 1px;
+  padding: 5px;
+  background: darkslategray;
+  color: white;
+  text-decoration: none;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 10%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 99%;
+    max-width: 800px;
+    height: 15px;
+    border-radius: 5px;
+    margin: auto;
+    background: black;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    background: #e60000;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #e60000;
+    cursor: pointer;
+}
+
+p, input {
+  font-size: 1.3em;
+  margin: auto;
+  font-weight: 500;
+}
+label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.tips {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.max {
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+.boxcontainer {
+  width: 500px;
+  height: 420px;
+  /*background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);*/
+  margin: auto;
+  padding: 0px 15px;
+}
+h1 {
+  padding: 10px 0px;
+}
+
+input {
+  width: 20%;
+  background: darkslategray;
+  border: black solid 1px;
+}
+
+body {
+  background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
+}

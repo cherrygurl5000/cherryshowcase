@@ -1,0 +1,152 @@
+body {
+  background-color: blue;
+}
+
+.face {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: solid 10px black;
+  background-color: #ffff00;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+.face .eye {
+  width: 100px;
+  height: 150px;
+  border-radius: 49%;
+  background-color: black;
+  position: absolute;
+}
+.face .eye_left {
+  top: 20%;
+  left: 20%;
+}
+.face .eye_right {
+  top: 20%;
+  left: 60%;
+}
+.face .mouth {
+  position: relative;
+  top: 50%;
+}
+.face .mouth_top {
+  width: 370px;
+  height: 200px;
+  border-radius: 50%;
+  border-bottom: solid 10px black;
+  position: relative;
+  top: -70px;
+  left: 13%;
+}
+.face .mouth_bottom {
+  width: 370px;
+  height: 180px;
+  border-radius: 50%;
+  border-bottom: solid 10px black;
+  position: relative;
+  top: -260px;
+  left: 13%;
+}
+.face .mouth_left {
+  width: 100px;
+  height: 60px;
+  border-radius: 48%;
+  border-left: solid 18px black;
+  position: relative;
+  top: -335px;
+  left: 33px;
+  transform: rotate(60deg);
+}
+.face .mouth_right {
+  width: 100px;
+  height: 60px;
+  border-radius: 48%;
+  border-left: solid 18px black;
+  position: relative;
+  top: -400px;
+  left: 360px;
+  transform: rotate(130deg);
+}
+.face .mouth_tongue {
+  width: 60px;
+  height: 200px;
+  background: linear-gradient(126deg, red 50%, transparent 50%);
+  border-radius: 50%;
+  transform: rotate(50deg);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  animation: tongue 1s ease-in-out 2s infinite alternate;
+}
+.face .mouth_tongue hr {
+  background-color: black;
+  width: 145%;
+  height: 5px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(90deg);
+  position: relative;
+  top: 60px;
+  left: -18px;
+  animation: tongueLine 1s ease-in 2s infinite alternate;
+}
+
+@keyframes tongue {
+  0% {
+    background: linear-gradient(126deg, red 50%, transparent 50%);
+    top: 15px;
+  }
+  15% {
+    background: linear-gradient(126deg, red 48%, transparent 48%);
+    top: 21px;
+  }
+  20% {
+    background: linear-gradient(126deg, red 45%, transparent 45%);
+    top: 25px;
+  }
+  30% {
+    background: linear-gradient(126deg, red 42%, transparent 42%);
+    top: 34px;
+  }
+  40% {
+    background: linear-gradient(126deg, red 38%, transparent 38%);
+    top: 41px;
+  }
+  50% {
+    background: linear-gradient(126deg, red 35%, transparent 35%);
+    top: 47px;
+  }
+  60% {
+    background: linear-gradient(126deg, red 30%, transparent 30%);
+    top: 54px;
+  }
+  70% {
+    background: linear-gradient(126deg, red 25%, transparent 25%);
+    top: 60px;
+  }
+  80% {
+    background: linear-gradient(126deg, red 21%, transparent 21%);
+    top: 67px;
+  }
+  90% {
+    background: linear-gradient(126deg, red 5%, transparent 5%);
+    top: 73px;
+  }
+  100% {
+    background: linear-gradient(126deg, red 0%, transparent 0%);
+    top: 80px;
+  }
+}
+@keyframes tongueLine {
+  0% {
+    background-color: black;
+  }
+  10% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

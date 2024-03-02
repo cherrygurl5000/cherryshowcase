@@ -1,0 +1,45 @@
+footer {
+    margin-top: 8%;
+    text-align: center;
+}
+a.button {
+    background-color: #1cc9bb;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+footer.boxed {
+    width: 100%;
+    position: absolute;
+    bottom: -15%;
+}
+
+.topBox {
+    position: relative;
+    top: -25px;
+}
+.bottomBox {
+    position: relative;
+    top: 35px;
+}
+
+@media screen and (min-width: 1350px) {
+
+footer.boxed {
+    width: 100%; 
+    position: absolute; 
+    top: 30%; 
+    left: 20%;
+}
+    
+}

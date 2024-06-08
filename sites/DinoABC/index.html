@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Home</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg58.jpg) repeat #000;
+		}
+        .main {
+            margin-top: 8%;
+        }
+		:root {
+    		--primary: navy;
+    		--secondary: #800000;
+        }
+        .letter {
+            width: 45%;
+            margin-left: 3%;
+            float: left;
+        }
+        .smaller {
+            font-size: 88%;
+        }
+        .vowel a {
+            color: var(--primary);
+        }
+        @media screen and (min-width: 550px) and (max-width: 1023px) {
+            body {
+                overflow-y: scroll;
+            }
+            .letter {
+                width: 21%;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            body {
+                overflow-y: scroll;
+            }
+            .letter {
+                width: 10%;
+                font-size: 410%;
+            }
+            .smaller {
+                font-size: 85%;
+            }
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="letter vowel" onmouseenter="plays('as')">
+			<a href="Apatosaurus.html">
+                <div class="letter-up">
+                    A
+                </div>
+                <div class="letter-low">
+                    a
+                </div>
+                <audio id="as">
+                    <source src="sounds/A/A-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+        <div class="letter" onmouseenter="plays('bs')">
+            <a href="Baryonyx.html">
+                <div class="letter-up">
+                    B
+                </div>
+                <div class="letter-low">
+                    b
+                </div>
+                <audio id="bs">
+                    <source src="sounds/B/B-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('cs')">
+            <a href="Corythosaurus.html">
+                <div class="letter-up">
+                    C
+                </div>
+                <div class="letter-low">
+                    c
+                </div>
+                <audio id="cs">
+                    <source src="sounds/C/C-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ds')">
+            <a href="Dilophosaurus.html">
+                <div class="letter-up">
+                    D
+                </div>
+                <div class="letter-low">
+                    d
+                </div>
+                <audio id="ds">
+                    <source src="sounds/D/D-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter vowel" onmouseenter="plays('es')">
+            <a href="Edmontosaurus.html">
+                <div class="letter-up">
+                    E
+                </div>
+                <div class="letter-low">
+                    e
+                </div>
+                <audio id="es">
+                    <source src="sounds/E/E-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('fs')">
+            <a href="Fukuisaurus.html">
+                <div class="letter-up">
+                    F
+                </div>
+                <div class="letter-low">
+                    f
+                </div>
+                <audio id="fs">
+                    <source src="sounds/F/F-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('gs')">
+            <a href="Giganotosaurus.html">
+                <div class="letter-up">
+                    G
+                </div>
+                <div class="letter-low">
+                    g
+                </div>
+                <audio id="gs">
+                    <source src="sounds/G/G-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('hs')">
+            <a href="Hadrosaurus.html">
+                <div class="letter-up">
+                    H
+                </div>
+                <div class="letter-low">
+                    h
+                </div>
+                <audio id="hs">
+                    <source src="sounds/H/H-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter vowel" onmouseenter="plays('is')">
+            <a href="Iguanodon.html">
+                <div class="letter-up">
+                    I
+                </div>
+                <div class="letter-low">
+                    i
+                </div>
+                <audio id="is">
+                    <source src="sounds/I/I-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('js')">
+            <a href="Juravenator.html">
+                <div class="letter-up">
+                    J
+                </div>
+                <div class="letter-low">
+                    j
+                </div>
+                <audio id="js">
+                    <source src="sounds/J/J-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ks')">
+            <a href="Kentrosaurus.html">
+                <div class="letter-up">
+                    K
+                </div>
+                <div class="letter-low">
+                    k
+                </div>
+                <audio id="ks">
+                    <source src="sounds/K/K-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ls')">
+            <a href="Leptoceratops.html">
+                <div class="letter-up">
+                    L
+                </div>
+                <div class="letter-low">
+                    l
+                </div>
+                <audio id="ls">
+                    <source src="sounds/L/L-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ms')">
+            <a href="Megalosaurus.html">
+                <div class="letter-up">
+                    <span class="smaller">M</span>
+                </div>
+                <div class="letter-low">
+                    <span class="smaller">m</span>
+                </div>
+                <audio id="ms">
+                    <source src="sounds/M/M-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ns')">
+            <a href="Neuquenosaurus.html">
+                <div class="letter-up">
+                    N
+                </div>
+                <div class="letter-low">
+                    n
+                </div>
+                <audio id="ns">
+                    <source src="sounds/N/N-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter vowel" onmouseenter="plays('os')">
+            <a href="Oviraptor.html">
+                <div class="letter-up">
+                    O
+                </div>
+                <div class="letter-low">
+                    o
+                </div>
+                <audio id="os">
+                    <source src="sounds/O/O-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ps')">
+            <a href="Pachycephalosaurus.html">
+                <div class="letter-up">
+                    P
+                </div>
+                <div class="letter-low">
+                    p
+                </div>
+                <audio id="ps">
+                    <source src="sounds/P/P-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('qs')">
+            <a href="Quaesitosaurus.html">
+                <div class="letter-up">
+                    Q
+                </div>
+                <div class="letter-low">
+                    q
+                </div>
+                <audio id="qs">
+                    <source src="sounds/Q/Q-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('rs')">
+            <a href="Rhoetosaurus.html">
+                <div class="letter-up">
+                    R
+                </div>
+                <div class="letter-low">
+                    r
+                </div>
+                <audio id="rs">
+                    <source src="sounds/R/R-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ss')">
+            <a href="Stegosaurus.html">
+                <div class="letter-up">
+                    S
+                </div>
+                <div class="letter-low">
+                    s
+                </div>
+                <audio id="ss">
+                    <source src="sounds/S/S-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ts')">
+            <a href="Tyrannosaurus.html">
+                <div class="letter-up">
+                    T
+                </div>
+                <div class="letter-low">
+                    t
+                </div>
+                <audio id="ts">
+                    <source src="sounds/T/T-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter vowel" onmouseenter="plays('us')">
+            <a href="Utahraptor.html">
+                <div class="letter-up">
+                    U
+                </div>
+                <div class="letter-low">
+                    u
+                </div>
+                <audio id="us">
+                    <source src="sounds/U/U-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('vs')">
+            <a href="Velociraptor.html">
+                <div class="letter-up">
+                    V
+                </div>
+                <div class="letter-low">
+                    v
+                </div>
+                <audio id="vs">
+                    <source src="sounds/V/V-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ws')">
+            <a href="Wannanosaurus.html">
+                <div class="letter-up">
+                    <span class="smaller">W</span>
+                </div>
+                <div class="letter-low">
+                    <span class="smaller">w</span>
+                </div>
+                <audio id="ws">
+                    <source src="sounds/W/W-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('xs')">
+            <a href="Xenoceratops.html">
+                <div class="letter-up">
+                    X
+                </div>
+                <div class="letter-low">
+                    x
+                </div>
+                <audio id="xs">
+                    <source src="sounds/X/X-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('ys')">
+            <a href="Yimenosaurus.html">
+                <div class="letter-up">
+                    Y
+                </div>
+                <div class="letter-low">
+                    y
+                </div>
+                <audio id="ys">
+                    <source src="sounds/Y/Y-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+        </div>
+        
+		<div class="letter" onmouseenter="plays('zs')">
+            <a href="Zephyrosaurus.html">
+                <div class="letter-up">
+                    Z
+                </div>
+                <div class="letter-low">
+                    z
+                </div>
+                <audio id="zs">
+                    <source src="sounds/Z/Z-sound.mp3" type="audio/mpeg">
+                </audio>
+            </a>
+
+		<!--End of letter-->
+		</div>
+
+		
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

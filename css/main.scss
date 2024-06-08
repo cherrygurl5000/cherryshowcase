@@ -114,6 +114,11 @@ img {
   &-users img {
     height: 120px;
   }
+  &-users {
+    div a div p {
+      color: #000061;
+    }
+  }
 }
 a.cmod {
   @include faded-background;

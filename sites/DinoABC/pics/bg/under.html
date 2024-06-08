@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+            <meta charset = "UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <title>Yep</title>
+
+            <style>
+            .box {
+                width: 100px;
+                height: 50px;
+                border: 3px solid #e1e141;
+                margin-left: 3px;
+                color: royalblue;
+                /* position: relative; */
+                float: left;
+            }
+            /* p {
+                font-size: 72px;
+                background: -webkit-linear-gradient(#eee, #333);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            } */
+            </style>
+    </head>
+
+    <body onload="got()">
+        <script>
+            function got() {
+                var newDiv = [];
+                var kiss = document.getElementById("boxes");
+
+                //console.log("Hey");
+
+                for(i=1; i<85; i++) {
+                    //console.log(i);
+                    newDiv[i] = document.createElement("DIV");
+                    newDiv[i].classList.add("box");
+                    newDiv[i].innerHTML = "yeah boy "+i;
+                    if(i<10)
+                    newDiv[i].style.backgroundImage = "url('bg0"+i+".jpg')";
+                    else
+                    newDiv[i].style.backgroundImage = "url('bg"+i+".jpg')";
+                    kiss.append(newDiv[i]);
+                }
+            }
+        //got();
+        </script>
+
+        <div id="boxes"></div>
+        <!-- <div class="box" onclick="got()">yeah boy</div> -->
+
+    </body>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Lived</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(css/abstract-19616_640.jpg) repeat #000;
+		}
+		:root {
+    		--primary: yellow;
+    		--secondary: #6600CC;
+        }
+        .header h1 {
+            line-height: 80%;
+        }
+        a {
+            color: black;
+            font-size: large;
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+			<h1>When They Lived</h1>
+			<p>Dinosaurs lived about 66 to 251 million years ago.<br/>
+				Click on the era containing the dinosaurs you would like to learn more about.
+			</p>
+        </div>
+        
+        <div class="lived">
+		    <div id="triassic" class="era">
+                <h1>Triassic</h1>
+                <div class="triassic-early wide">
+                    <!-- <p><span class="years">251-247</span>
+                        <span class="era-names">Early Triassic</span></p> -->
+                        <!-- <p>Early Triassic <br /> -->
+                        <a href="triassic-early.html"><p>251-247 million years ago</p></a>
+                </div>
+                <div class="triassic-middle wide">
+                    <!-- <p><span class="years">247-237</span>
+                        <span class="era-names">Middle Triassic</span></p> -->
+                        <a href="triassic-middle.html"><p>247-237 million years ago</p></a>
+                </div>
+                <div class="triassic-late wide">
+                    <!-- <p><span class="years">237-201</span>
+                        <span class="era-names">Late Triassic</span></p> -->
+                        <a href="triassic-late.html"><p>237-201 million years ago</p></a>
+                </div>
+
+            <!--End Triassic Div-->
+            </div>
+              
+            <div id="jurassic" class="era">
+                <h1>Jurassic</h1>
+                <div class="jurassic-early wide">
+                    <!-- <p><span class="years">201-174</span>
+                        <span class="era-names">Early Jurassic</span></p> -->
+                        <a href="jurassic-early.html"><p>201-174 million years ago</p></a>
+                </div>
+                <div class="jurassic-middle wide">
+                    <!-- <p><span class="years">174-163</span>
+                        <span class="era-names">Middle Jurassic</span></p> -->
+                        <a href="jurassic-middle.html"><p>174-163 million years ago</p></a>
+                </div>
+                <div class="jurassic-late wide">
+                    <!-- <p><span class="years">163-145</span>
+                        <span class="era-names">Late Jurassic</span></p> -->
+                        <a href="jurassic-late.html"><p>163-145 million years ago</p></a>
+                </div>
+
+            <!--End Jurassic Div-->
+            </div>
+
+            <div id="cretaceous" class="era">
+                <h1>Cretaceous</h1>
+                <div class="cretaceous-early wide">
+                    <!-- <p><span class="years">145-100</span>
+                        <span class="era-names">Early Cretaceous</span></p> -->
+                        <a href="cretaceous-early.html"><p>145-100 million years ago</p></a>
+                </div>
+                <div class="cretaceous-late wide">
+                    <!-- <p><span class="years">100-66</span>
+                        <span class="era-names">Late Cretaceous</span></p> -->
+                        <a href="cretaceous-late.html"><p>100-66 million years ago</p></a>
+                </div>
+
+            <!--End Cretaceous Div-->
+            </div>
+
+        <!--End Lived Div-->
+        </div>
+
+		
+	<!--End of main-->
+	</div>
+
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

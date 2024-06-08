@@ -1,0 +1,34 @@
+{
+  "name": "cherryscarries.com",
+  "version": "1.0.0",
+  "description": "\"The website for Cherry's Carries Transport, located at CherrysCarries.com\"",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.5.1",
+    "php": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherrygurl5000/CherrysCarries.git"
+  },
+  "keywords": [
+    "Cherry's",
+    "Carries",
+    "Transport",
+    "Car",
+    "Hauling",
+    "Service"
+  ],
+  "author": "Stephanie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cherrygurl5000/CherrysCarries/issues"
+  },
+  "homepage": "https://github.com/cherrygurl5000/CherrysCarries#readme"
+}

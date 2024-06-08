@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Leptoceratops</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg09.jpg) repeat #000;
+		}
+		:root {
+    		--primary: chartreuse;
+    		--secondary: #0080FF;
+		}
+		@media screen and (min-width: 1024px) {
+			.sound {
+				margin-top: 15%;
+			}
+		}
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div id="letters" class="letter" onclick="plays('as')">
+			<div class="letter-up">
+			    L
+			</div>
+			<div class="letter-low">
+			    l
+			</div>
+			<audio id="as">
+				<source src="sounds/L/L-sound.mp3" type="audio/mpeg">
+			</audio>
+
+		<!--End of letter-->
+		</div>
+
+		<div id="dinos" class="dino">
+			<div class="dino-pic" id="dinoPic" onclick="showFacts()">
+			    <img src="pics/leptoceratops.jpg" alt="Leptoceratops Picture" />
+			</div>
+			<div class="dino-fact" id="dFact" >
+                <a href="javascript:void(0)" class="closebtn" onclick="hideFacts()">&times;</a>
+				<span class="sound" id="playBtn" onclick="plays('fact')">&#9658</span>
+				<span class="sound" id="stopBtn" onclick="stops()">&#9607</span>
+				<ul>
+                    <li><strong>Meaning&#58 </strong>Slim Horned Face</li>
+                    <li><strong>Type&#58 </strong>Ceratopsian</li>
+                    <li><strong>Length&#58 </strong>3.0m</li>
+                    <li><strong>Diet&#58 </strong>Herbivore</li>
+                    <li><strong>When it Lived&#58 </strong>Late Cretaceous<br />67-65 million years ago</li>
+                    <li><strong>Found&#58 </strong>Canada, USA</li>
+				</ul>
+				<audio id="fact">
+					<source src="sounds/L/Leptoceratops-fact.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of dino-->
+		</div>.
+
+		<div id="sounds" class="sound">
+			<div class="sound-name" onclick="plays('sn')">
+				<h1 class="dino-name">Leptoceratops</h1>
+				<audio id="sn">
+					<source src="sounds/L/Leptoceratops.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="sound-pronounce" onclick="plays('sp')">
+                <h1 class="dino-pron"><span class="sec">lep-</span><span class="prim">toh-</span><!--
+                    --><span class="sec">SER-</span><span class="prim">ah-</span><span class="sec">tops</span></h1>
+				<audio id="sp">
+					<source src="sounds/L/Leptoceratops-Pronounce.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of sound-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+
+	<a class="arrow prev" href="Kentrosaurus.html">Kk</a>
+	<a class="arrow next" href="Megalosaurus.html">Mm</a>
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

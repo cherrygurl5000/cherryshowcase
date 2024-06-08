@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Found</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(css/abstract-19616_640.jpg) repeat #000;
+		}
+		:root {
+    		--primary: yellow;
+    		--secondary: #6600CC;
+		}
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+			<h1>Found</h1>
+			<p>Dinosaurs have been found in multiple locations around the world.<br/>
+				Click on the location containing the dinosaurs you would like to learn more about.
+			</p>
+		</div>
+
+		<div id="pics" class="pictures">
+			<a href="argentina.html"><img src="pics/found/argentina.jpg" alt="Argentina Silhouette" class="images"/></a>
+			<a href="australia.html"><img src="pics/found/australia.jpg" alt="Australia Silhouette" class="images"/></a>
+			<a href="belgium.html"><img src="pics/found/belgium.jpg" alt="Belgium Silhouette" class="images"/></a>
+			<a href="canada.html"><img src="pics/found/canada.jpg" alt="Canada Silhouette" class="images"/></a>
+			<a href="china.html"><img src="pics/found/china.jpg" alt="China Silhouette" class="images"/></a>
+			<a href="england.html"><img src="pics/found/england.jpg" alt="England Silhouette" class="images"/></a>
+			<a href="germany.html"><img src="pics/found/germany.jpg" alt="Germany Silhouette" class="images"/></a>
+			<a href="japan.html"><img src="pics/found/japan.jpg" alt="Japan Silhouette" class="images"/></a>
+			<a href="mongolia.html"><img src="pics/found/mongolia.jpg" alt="Mongolia Silhouette" class="images"/></a>
+			<a href="spain.html"><img src="pics/found/spain.jpg" alt="Spain Silhouette" class="images"/></a>
+			<a href="tanzania.html"><img src="pics/found/tanzania.jpg" alt="Tanzania Silhouette" class="images"/></a>
+			<a href="uk.html"><img src="pics/found/uk.jpg" alt="United Kingdom Silhouette" class="images"/></a>
+			<a href="usa.html"><img src="pics/found/usa.jpg" alt="United States Silhouette" class="images"/></a>
+			
+			
+		<!--End of pictures-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

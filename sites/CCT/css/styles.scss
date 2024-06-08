@@ -1,0 +1,176 @@
+$bg-color: black;
+$servicesBG: rgba(128, 128, 128, 0.9);
+$aboutBG:  rgba(0, 0, 0, 0.9);
+$txtColor: rgb(102, 0, 0);
+
+@mixin picSizing() {
+    width: 50%;
+    height: auto;
+    max-width: 100px;
+    padding: 10px;
+}
+@mixin headerStyle($bgVar) {
+    color: $txtColor;
+    font-weight: bolder;
+    background-color: $bgVar;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+body {
+    background-color: $bg-color;
+    background-image: url("../img/muscleLogo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: fixed;
+
+    h1, h2, h3 {
+        font-family: 'Orbitron', sans-serif;
+    }
+}
+
+a {
+    color: rgb(255, 102, 102);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p, label, input {
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.jumbotron {
+    background-color: transparent;
+    
+    .navbar {
+        background-color: rgba(230, 230, 230, 0.2);
+        padding: 0px;
+    }
+}
+
+.main {
+    //border: yellow 5px solid;
+}
+
+// #menuBtn {
+//     width: 50px;
+//     height: 50px;
+// }
+
+#picMain img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height: 400px;
+}
+.mainLogo, .infoLogo {
+   @include picSizing();
+    background: radial-gradient(red 1%, black 60%, red);
+
+}
+
+.aboutMain {
+    background-color: $aboutBG;
+    color: white;
+
+    h1 {
+        @include headerStyle(rgba(230, 230, 230, 0.4));
+    }
+}
+
+.services {
+    background-color: $servicesBG;
+
+    h1 {
+        @include headerStyle(white);
+    }
+    h2 {
+        text-shadow: 2px 1px $txtColor;
+    }
+    p {
+        color:rgb(102, 0, 0);
+        background-color: rgba(0, 0, 0, 0.2);
+        font-weight: 550;
+        padding: 3px 5px 3px 3px;
+        width: fit-content;
+    }
+
+    .modal-content {
+        background-color: rgba(0, 0, 0, 0.8);
+
+    }
+    .modal-header {
+        border: none;
+        text-shadow: 2px 1px $txtColor;
+        background-color: $servicesBG;
+        
+    }
+    .modal-body p {
+        color: white;
+    }
+}
+.social img {
+    @include picSizing();
+    
+}
+
+.carousel {
+    &-item img {
+    width: 350px;
+    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    }
+    &-indicators {
+        position: relative !important;
+        top: 450px;
+    }
+}
+
+.about {
+    text-indent: 50px;
+}
+
+.infoBox {
+   // border-top: orange 3px solid;
+    background-color: $aboutBG;
+    color: white;
+    padding-top: 20px;
+
+    div {
+        color: rgba(128, 128, 128, 1);
+    }
+}
+
+#quoteForm {
+    #submission{
+        button {
+            border: darkslateblue 3px outset;
+        } 
+    }
+    input {
+        background-color: $servicesBG;
+        color: $txtColor;
+        font-weight: bold;
+    }
+    label {
+        color: $txtColor;
+        font-weight: bolder;
+    }
+
+    h1 {
+        @include headerStyle($servicesBG);
+    }
+
+    h2, h4 {
+        text-shadow: 2px 1px $txtColor;
+    }
+
+    
+
+}
+#footerBar {
+    background-color: rgba(230, 230, 230, 0.2);
+    padding: 0px;
+}

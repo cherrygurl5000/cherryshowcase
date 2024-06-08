@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Diets</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg05.jpg) repeat #000;
+		}
+		:root {
+    		--primary: mediumblue;
+    		--secondary: #E60000;
+		}
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+			<h1>Diets</h1>
+			<p>Dinosaurs can be broken into three (3) groups based on their diets.<br/>
+				Click on the diet containing the dinosaurs you would like to learn more about.
+			</p>
+        </div>
+        
+		<div class="diets">
+			<div  class="dietSect" >
+				<!-- <a href="herbivore.html"><span id="herbivores">Herbivore</span></a>
+                <a href="omnivore.html"><span id="omnivores">Omnivore</span></a>
+				<a href="carnivore.html"><span id="carnivores">Carnivore</span></a> -->
+			</div>
+			
+			
+		<!--End of diets-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

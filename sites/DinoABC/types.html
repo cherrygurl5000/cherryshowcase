@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Types</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg84.jpg) repeat #000;
+		}
+		:root {
+    		--primary: indigo;
+    		--secondary: #408000;
+        }
+        .images {
+            width: 45%;
+            margin-left: 3%;
+        }
+        @media screen and (min-width: 550px) and (max-width: 1023px) {
+            .images {
+                width: 29%;
+                margin-left: 2%;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .images {
+                width: 29%;
+                margin-left: 2%;
+            }
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+			<h1>Types</h1>
+			<p>Dinosaurs are separated into multiple types.<br/>
+				Click on the type containing the dinosaurs you would like to learn more about.
+			</p>
+		</div>
+
+		<div id="pics" class="pictures">
+			<a href="armored.html"><img src="pics/armored.jpg" alt="Armored Dinosaurs" class="images"/></a>
+			<a href="ceratopsian.html"><img src="pics/ceratopsian.jpg" alt="Ceratopsian" class="images"/></a>
+			<a href="ornithopod.html"><img src="pics/ornithopod.jpg" alt="Ornithopod" class="images"/></a>
+			<a href="l-theropod.html"><img src="pics/l-theropod.jpg" alt="Large Theropod" class="images"/></a>
+			<a href="s-theropod.html"><img src="pics/s-theropod.jpg" alt="Small Theropod" class="images"/></a>
+			<a href="sauropod.html"><img src="pics/sauropod.jpg" alt="Sauropod" class="images"/></a>
+			
+			
+		<!--End of pictures-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

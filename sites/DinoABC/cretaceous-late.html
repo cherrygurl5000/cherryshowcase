@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Late Cretaceous</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg79.jpg) repeat #000;
+		}
+		:root {
+    		--primary: fuchsia;
+    		--secondary: lime;
+        }
+        .images {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .header h1 {
+            text-decoration: underline #2E2E1F wavy;
+            line-height: 100%;
+            font-size: 300%;
+            color: var(--secondary);
+        }
+        .header p {
+            color: var(--primary);
+            font-size: 180%;
+        }
+        #pachy {
+            font-size: 220%;
+        }
+        .arrow {
+            position: fixed;
+            top: 48%;
+            width: fit-content;
+            font-size: 300%;
+            color: var(--primary);
+        }
+        .prev {
+        left: 1%;
+        }
+        .next {
+        left: 91%;
+        }
+        @media screen and (min-width: 550px) {
+            .arrow {
+                font-size: 400%;
+            }
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+            <h1>Late Cretaceous</h1>
+            <p>100-66 Million Years Ago</p>
+		</div>
+
+		<div id="pics" class="pictures">
+            <a href="corythosaurus.html"><h2>Corythosaurus</h2>
+                <img src="pics/corythosaurus.jpg" alt="Corythosaurus" class="images"/></a>
+            <a href="edmontosaurus.html"><h2>Edmontosaurus</h2>
+                <img src="pics/edmontosaurus.jpg" alt="Edmontosaurus" class="images"/></a>
+            <a href="hadrosaurus.html"><h2>Hadrosaurus</h2>
+                <img src="pics/hadrosaurus.jpg" alt="Hadrosaurus" class="images"/></a>
+            <a href="leptoceratops.html"><h2>Leptoceratops</h2>
+                <img src="pics/leptoceratops.jpg" alt="Leptoceratops" class="images"/></a>
+            <a href="neuquenosaurus.html"><h2>Neuquenosaurus</h2>
+                <img src="pics/neuquenosaurus.jpg" alt="Neuquenosaurus" class="images"/></a>
+            <a href="oviraptor.html"><h2>Oviraptor</h2>
+                <img src="pics/oviraptor.jpg" alt="Oviraptor" class="images"/></a>
+            <a href="pachycephalosaurus.html"><h2 id="pachy">Pachycephalosaurus</h2>
+                <img src="pics/pachycephalosaurus.jpg" alt="Pachycephalosaurus" class="images"/></a>
+            <a href="quaesitosaurus.html"><h2>Quaesitosaurus</h2>
+                <img src="pics/quaesitosaurus.jpg" alt="Quaesitosaurus" class="images"/></a>
+                <a href="tyrannosaurus.html"><h2>Tyrannosaurus</h2>
+                    <img src="pics/tyrannosaurus.jpg" alt="Tyrannosaurus" class="images"/></a>
+                <a href="velociraptor.html"><h2>Velociraptor</h2>
+                    <img src="pics/velociraptor.jpg" alt="Velociraptor" class="images"/></a>
+                <a href="xenoceratops.html"><h2>Xenoceratops</h2>
+                    <img src="pics/xenoceratops.jpg" alt="Xenoceratops" class="images"/></a>
+            
+			
+		<!--End of pictures-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+	
+	<a class="arrow prev" href="cretaceous-early.html">&#10094;</a>
+    <a class="arrow next" href="jurassic-early.html">&#10095;</a>
+    
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

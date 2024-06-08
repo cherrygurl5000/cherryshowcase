@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>United States of America</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg60.jpg) repeat #000;
+		}
+		:root {
+    		--primary: deeppink;
+    		--secondary: #1414FF;
+        }
+        .images {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .header h1 {
+            text-decoration: underline #2E2E1F wavy;
+            line-height: 100%;
+            font-size: 350%;
+        }
+        .arrow {
+            position: fixed;
+            top: 48%;
+            width: fit-content;
+            font-size: 300%;
+            color: var(--primary);
+        }
+        .prev {
+        left: 1%;
+        }
+        .next {
+        left: 91%;
+        }
+        @media screen and (min-width: 550px) {
+            .arrow {
+                font-size: 400%;
+            }
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+			<h1>United States of America</h1>
+		</div>
+
+		<div id="pics" class="pictures">
+            <a href="apatosaurus.html"><h2>Apatosaurus</h2>
+                <img src="pics/apatosaurus.jpg" alt="Apatosaurus" class="images"/></a>
+            <a href="corythosaurus.html"><h2>Corythosaurus</h2>
+                <img src="pics/corythosaurus.jpg" alt="Corythosaurus" class="images"/></a>
+            <a href="dilophosaurus.html"><h2>Dilophosaurus</h2>
+                <img src="pics/dilophosaurus.jpg" alt="Dilophosaurus" class="images"/></a>
+            <a href="hadrosaurus.html"><h2>Hadrosaurus</h2>
+                <img src="pics/hadrosaurus.jpg" alt="Hadrosaurus" class="images"/></a>
+            <a href="iguanodon.html"><h2>Iguanodon</h2>
+                <img src="pics/iguanodon.jpg" alt="Iguanodon" class="images"/></a>
+            <a href="leptoceratops.html"><h2>Leptoceratops</h2>
+                <img src="pics/leptoceratops.jpg" alt="Leptoceratops" class="images"/></a>
+            <a href="pachycephalosaurus.html"><h2>Pachycephalosaurus</h2>
+                <img src="pics/pachycephalosaurus.jpg" alt="Pachycephalosaurus" class="images"/></a>
+            <a href="stegosaurus.html"><h2>Stegosaurus</h2>
+                <img src="pics/stegosaurus.jpg" alt="Stegosaurus" class="images"/></a>
+            <a href="tyrannosaurus.html"><h2>Tyrannosaurus</h2>
+                <img src="pics/tyrannosaurus.jpg" alt="Tyrannosaurus" class="images"/></a>
+            <a href="utahraptor.html"><h2>Utahraptor</h2>
+                <img src="pics/utahraptor.jpg" alt="Utahraptor" class="images"/></a>
+            <a href="zephyrosaurus.html"><h2>Zephyrosaurus</h2>
+                <img src="pics/zephyrosaurus.jpg" alt="Zephyrosaurus" class="images"/></a>
+			
+			
+		<!--End of pictures-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+	
+	<a class="arrow prev" href="uk.html">&#10094;</a>
+    <a class="arrow next" href="argentina.html">&#10095;</a>
+    
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

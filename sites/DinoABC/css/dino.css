@@ -1,0 +1,624 @@
+﻿body
+{
+    overflow-x: hidden !important;
+    width: 100%;
+    overflow-y: auto;
+}
+.main {
+    width: 350px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation {
+    width: 100%;
+    height: 10%;
+}
+#top {
+    position: absolute;
+    top: 1%;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    width: 130px;
+    display: inline-block;
+    background: #D1D1E0;
+}
+#set {
+    position: absolute;
+    top: 0px;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 300px;
+    font-size: 40px;
+}
+.navigation-menu {
+    display: none;
+    width: 150px;
+    position: absolute;
+    top: 65px;
+    padding-left: -5px;
+    padding-right: 10px;
+    z-index: 5;
+    background: rgba(173, 152, 152, 0.8);
+}
+.navigation-settings {
+    display: none;
+    width: 48%;
+    position: absolute;
+    margin-left: 160px;
+    top: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 18px;
+    z-index: 5;
+    background: rgba(173, 152, 152, 0.8);
+    font-size: 25px;
+}
+#vol {
+    width: 70%;
+}
+#volPic {
+    font-size: 35px;
+    background: white;
+}
+.cats {
+    display: none;
+}
+li {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+ li a {
+    color: var(--secondary);
+    list-style-type: none;
+} 
+.navigation-menu ul li {
+    list-style-type: none;
+    color: var(--primary);
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.navigation-menu ul li ul li {
+    margin-left: -15px;
+    padding-top: 5px;
+}
+
+.letter {
+    width: 45%;
+    height: 20%;
+    font-family: Aharoni;
+    font-size: 100px;
+    color: var(--primary);
+    position: relative;
+    top: 5%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: grab;
+}
+.letter-up {
+    width: 48%;
+    float: left;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+    text-align: right;
+}
+.letter:hover > .letter-up {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+.letter-low {
+    animation: waving2 3 700ms alternate-reverse 1.5s;
+    -webkit-animation: waving2 3 700ms alternate-reverse 1.5s;
+    text-align: left;
+}
+.letter:hover > .letter-low {
+    animation: waving2 infinite 700ms alternate-reverse;
+    -webkit-animation: waving2 infinite 700ms alternate-reverse;
+}
+.dino {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.dino-pic {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    cursor: grab;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+}
+.dino-pic:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+img {
+    width: 100%;
+}
+.dino-fact {
+    display: none;
+    background: rgba(204, 102, 153, 0.5); 
+    padding: 10px;
+    font-size: large;
+    margin-top: 5%;
+}
+#playBtn {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 8px;
+    background: lightslategray;
+    box-shadow: rgb(53, 53, 53) 5px 3px;
+    margin-bottom: 2px;
+    color: var(--primary);
+}
+#stopBtn {
+    border: 1px solid black;
+    padding: 5px;
+    background: lightslategray;
+    box-shadow: rgb(53, 53, 53) 5px 3px;
+    margin-bottom: 2px;
+    color: var(--secondary);
+}
+.sound {
+    width: 100%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Aharoni;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+}
+.dino-name {
+    font-size: 290%;
+    cursor: grab;
+    color: var(--secondary);
+    animation: waving2 3 700ms alternate-reverse 1.5s;
+    -webkit-animation: waving2 3 700ms alternate-reverse 1.5s;
+}
+.dino-name:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+
+.dino-pron {    
+    cursor: grab;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+}
+.dino-pron:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+.arrow {
+    width: 20%;
+    height: 12%;
+    position: absolute;
+    top: 18%;
+    font-size: 270%;
+    font-weight: 900;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+}
+.arrow:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+/* .arrow:hover > .letter-up {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+.arrow:hover > .letter-low {
+    animation: waving2 infinite 700ms alternate-reverse;
+    -webkit-animation: waving2 infinite 700ms alternate-reverse;
+} */
+.prev {
+    left: 5%;
+}
+.next {
+    left: 82%;
+}
+a {
+    text-decoration: none; 
+    color: var(--secondary);
+}
+.closebtn {
+    float: right;
+    clear: right;
+    padding-right: 10px;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.prim {
+    color: var(--primary);
+    display: inline-block;
+}
+.sec {
+    color: var(--secondary);
+    display: inline-block;
+}
+
+.pictures {
+    width: 90%;
+    height: auto; 
+    margin-left: 5%;
+    position: relative; 
+    top: 4%;
+}
+.images {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+    border-radius: 15%;
+    box-shadow: 8px 8px #2E2E1F;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+}
+.images:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+.header {
+    width: 98%;
+    text-align: center;
+    color: var(--primary);
+}
+.header h1 {
+    font-size: 400%;
+    line-height: 40%;
+}
+.header p {
+    color: var(--secondary);
+    font-size: x-large;
+}
+.pictures h2 {
+    font-size: 300%;
+    line-height: 0%;
+    color: var(--secondary);
+    text-align: center;
+}
+.dietSect {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../pics/diet/diets.svg");
+    background-size: 300px 300px;
+    background-repeat: none;
+    color: black;
+
+}
+#herbivores, #carnivores {
+    width: 110px;
+    height: auto;
+    display: inline-block;
+    margin-top: 50px;
+    padding-top: 195px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+#omnivores {
+    width: 65px;
+    height: auto;
+    display: inline-block;
+    margin-top: 50px;
+    padding-top: 195px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+  .lived {
+    width: 300px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .era h1 {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+  }
+  .era {
+    padding: 0px;
+  }
+  .wide {
+    width: 67%;
+    border: black 1px solid;
+    text-align: center;
+    margin-left: 17%;
+    box-sizing: border-box;
+    animation: waving2 3 700ms alternate 1.5s;
+    -webkit-animation: waving2 3 700ms alternate 1.5s;
+  }
+  .wide:hover {
+    animation: waving2 infinite 700ms alternate;
+    -webkit-animation: waving2 infinite 700ms alternate;
+}
+  #jurassic {
+    height: 41%;
+    margin-top: -8px;
+  }
+  .jurassic-early {
+    margin-top: -23px;
+    height: 40%;
+    background-image: linear-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.7));
+  }
+  .jurassic-early p {
+    margin-top: 12%;
+    font-weight: 700;
+  }
+  .jurassic-middle {
+    height: 20%;
+    background-image: linear-gradient(rgba(0, 0, 255, 1), rgba(0, 0, 255, 0.7));
+  }
+  .jurassic-middle p {
+    margin-top: 4%;
+    font-weight: 700;
+  }
+  .jurassic-late {
+    height: 28%;
+    background-image: linear-gradient(rgba(75, 0, 130, 1), rgba(75, 0, 130, 0.7));
+  }
+  .jurassic-late p {
+    margin-top: 9%;
+    font-weight: 700;
+  }
+  #cretaceous {
+    height: 59%;
+    margin-top: -8px;
+  }
+  .cretaceous-early {
+    margin-top: -23px;
+    height: 44%;
+    background-image: linear-gradient(rgba(238, 130, 238, 1), rgba(238, 130, 238, 0.7));
+  }
+  .cretaceous-early p {
+    margin-top: 20%;
+    font-weight: 700;
+  }
+  .cretaceous-late {
+    height: 36%;
+    background-image: linear-gradient(rgba(255, 192, 203, 1), rgba(255, 192, 203, 0.7));
+  }
+  .cretaceous-late p {
+    margin-top: 20%;
+    font-weight: 700;
+  }
+@keyframes waving {
+    0% {transform: rotate(-60deg);}
+    50% {transform: rotate(60deg);}
+}
+@-webkit-keyframes waving {
+    0% {-webkit-transform: rotate(-60deg);}
+    50% {-webkit-transform: rotate(60deg);}
+}
+
+@keyframes waving2 {
+    0% {transform: rotate(-10deg);}
+    50% {transform: rotate(10deg);}
+}
+@-webkit-keyframes waving2 {
+    0% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(10deg);}
+}
+
+@media screen and (min-width: 550px) and (max-width: 1023px) {
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+    .dino {
+        display: inline-block;
+        width: 48%;
+        margin-left: 1%;
+        margin-top: 6%;
+    }
+    .sound  {
+        display: inline-block;
+        width: 48%;
+        margin-left: 1%;
+        top: -20px; 
+        font-size: 100%;
+    }
+    #set {
+        margin-left: 92%;
+    }
+    .next {
+        left: 90%;
+    }
+    .arrow {
+        top: 10%;
+    }
+    .letter {
+        width: 35%;
+    }
+    .letter-up {
+        text-align: right;
+    }
+    .letter-low {
+        text-align: left;
+    }
+    #playBtn {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        margin: 2px;
+        padding-top: 2px;
+        box-sizing: border-box;
+        top: 0px;
+    }
+    #stopBtn {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        margin: 2px;
+        box-sizing: border-box;
+        top: 2px;
+    }
+    #cat {
+        margin-top: 7px;
+    }
+    .navigation-settings {
+        margin-left: 50%;
+    }
+    .images {
+        width: 30%;
+    }
+    .dietSect {
+        width: 80%;
+        padding-top: 30%;
+        background-size: 100% 100%;
+        
+    }
+    #herbivores, #carnivores {
+        width: 37%;
+        margin-top: 16%;
+        padding-top: 70%;
+        font-size: x-large;
+        top: -75%;
+    }
+    #omnivores {
+        width: 23%;
+        margin-top: 16%;
+        padding-top: 70%;
+        font-size: x-large;
+        top: -75%;
+    }
+}
+
+@media screen and (min-width: 760px) and (orientation: portrait) {
+    .dino {
+        margin-top: 20%;
+    }
+    .letter {
+        margin-top: 10%;
+    }
+    .pictures {
+        margin-top: 10%;
+    }
+    .lived {
+        width: 400px;
+        height: 800px;
+    }
+    #jurassic, #cretaceous {
+        margin-top: -23px;
+    }
+}
+
+ @media screen and (min-width: 1024px) {
+   .main {
+       width: 96%;
+       margin-left: 2%;
+       margin-right: 2%;
+   }
+     #top {
+        display: none;
+    } 
+    .navigation {
+        margin-left: -3%;
+    }
+    .navigation-menu {
+        display: inline-block;
+        /* position: relative;
+        float: left; */
+        width: 100%;
+        top: 22px;
+    } 
+     .navigation-menu ul li {
+         /* display: inline; */
+         float: left; 
+        padding-right: 20px;
+        padding-bottom: 10px;
+    } 
+     .navigation-menu ul li ul li {
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+        display: block;
+        clear: right;
+        clear: left;
+    } 
+    .navigation-settings {
+        width: 55%;
+        left: 30%;
+        top: 57px;
+    }
+    #set {
+        /* position: relative;
+        float: right; */
+        margin-left: 90%;
+        margin-top: 22px;
+        /* background: rgba(97, 65, 65, 0.8); */
+        padding-top: 0px;
+        padding-left: 2px;
+        width: 5%;
+        z-index: 5;
+    }
+    .letter-up {
+        text-align: right;
+    }
+    .letter-low {
+        text-align: left;
+    }
+    .dino {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -3%;
+    }
+    .dino-fact {
+        font-size: xx-large;
+        width: 56%;
+        margin-left: 22%;
+    }
+    .sound {
+        margin-top: 25%;
+    }
+    .next {
+        left: 88%;
+        width: 10%;
+    } 
+    .prev {
+        width: 10%;
+    }   
+    .images {
+        width: 20%;
+    }
+    .dietSect {
+        width: 80%;
+        padding-top: 35%;
+        background-size: 100% 100%;
+    }
+    #herbivores, #carnivores {
+        width: 37%;
+        margin-top: 16%;
+        padding-top: 70%;
+        font-size: x-large;
+        top: -115%;
+    }
+    #omnivores {
+        width: 23%;
+        margin-top: 16%;
+        padding-top: 70%;
+        font-size: x-large;
+        top: -115%;
+    }
+    .lived {
+        margin-top: 100px;
+    }
+}

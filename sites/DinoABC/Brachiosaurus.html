@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Brachiosaurus</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(css/abstract-19616_640.jpg) repeat #000;
+		}
+		:root {
+    		--primary: yellow;
+    		--secondary: #6600CC;
+		}
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div id="letters" class="letter" onclick="plays('as')">
+			<div class="letter-up">
+			    B
+			</div>
+			<div class="letter-low">
+			    b
+			</div>
+			<audio id="as">
+				<source src="sounds/B/B-sound.mp3" type="audio/mpeg">
+			</audio>
+
+		<!--End of letter-->
+		</div>
+
+		<div id="dinos" class="dino">
+			<div class="dino-pic" id="dinoPic" onclick="showFacts()">
+			    <img src="pics/brachiosaurus.jpg" alt="Brachiosaurus Picture" />
+			</div>
+			<div class="dino-fact" id="dFact" >
+                <a href="javascript:void(0)" class="closebtn" onclick="hideFacts()">&times;</a>
+				<span class="sound" id="playBtn" onclick="plays('fact')">&#9658</span>
+				<span class="sound" id="stopBtn" onclick="stops()">&#9607</span>
+				<ul>
+                    <li><strong>Meaning&#58 </strong>Deceptive Lizard</li>
+                    <li><strong>Type&#58 </strong>Saurpod</li>
+                    <li><strong>Length&#58 </strong>21.0m</li>
+                    <li><strong>Diet&#58 </strong>Herbivore</li>
+                    <li><strong>When it Lived&#58 </strong>Late Jurassic <br />154-145 million years ago</li>
+                    <li><strong>Found&#58 </strong>USA</li>
+				</ul>
+				<audio id="fact">
+					<source src="sounds/A/Apatosaurus-fact.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of dino-->
+		</div>.
+
+		<div id="sounds" class="sound">
+			<div class="sound-name" onclick="plays('sn')">
+				<h1 class="dino-name">Apatosaurus</h1>
+				<audio id="sn">
+					<source src="sounds/A/Apatosaurus.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="sound-pronounce" onclick="plays('sp')">
+				<h1 class="dino-pron"><span class="sec">ah-</span><span class="prim">PAT-</span><span class="sec">oh-</span><span class="prim">sore-</span><span class="sec">us</span></h1>
+				<audio id="sp">
+					<source src="sounds/A/Apatosaurus-Pronounce.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of sound-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+
+	<a class="arrow prev" href="Zephyrosaurus.html">Zz</a>
+	<a class="arrow next" href="Brachiosaurus.html">Bb</a>
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

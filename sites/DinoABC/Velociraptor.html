@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Velociraptor</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg27.jpg) repeat #000;
+		}
+		:root {
+    		--primary: darkmagenta;
+    		--secondary: #678A00;
+		}
+		.sound {
+			font-size: 16px;
+		}
+		@media screen and (min-width: 1024px) {
+			.sound {
+				margin-top: 33%;
+			}
+		}
+		@media screen and (min-width: 1024px) and (max-width: 1225px) and (orientation: landscape) {
+			.dino-pic {
+				width: 80%;
+			}
+			.sound {
+				margin-top: 20%;
+			}
+		}
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div id="letters" class="letter" onclick="plays('as')">
+			<div class="letter-up">
+			    V
+			</div>
+			<div class="letter-low">
+			    v
+			</div>
+			<audio id="as">
+				<source src="sounds/V/V-sound.mp3" type="audio/mpeg">
+			</audio>
+
+		<!--End of letter-->
+		</div>
+
+		<div id="dinos" class="dino">
+			<div class="dino-pic" id="dinoPic" onclick="showFacts()">
+			    <img src="pics/velociraptor.jpg" alt="Velociraptor Picture" />
+			</div>
+			<div class="dino-fact" id="dFact" >
+                <a href="javascript:void(0)" class="closebtn" onclick="hideFacts()">&times;</a>
+				<span class="sound" id="playBtn" onclick="plays('fact')">&#9658</span>
+				<span class="sound" id="stopBtn" onclick="stops()">&#9607</span>
+				<ul>
+                    <li><strong>Meaning&#58 </strong>Quick Plunderer</li>
+                    <li><strong>Type&#58 </strong>Small Theropod</li>
+                    <li><strong>Length&#58 </strong>1.8m</li>
+                    <li><strong>Diet&#58 </strong>Carnivore</li>
+                    <li><strong>When it Lived&#58 </strong>Late Cretaceous<br />74-70 million years ago</li>
+                    <li><strong>Found&#58 </strong>Mongolia</li>
+				</ul>
+				<audio id="fact">
+					<source src="sounds/V/Velociraptor-fact.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of dino-->
+		</div>.
+
+		<div id="sounds" class="sound">
+			<div class="sound-name" onclick="plays('sn')">
+				<h1 class="dino-name">Velociraptor</h1>
+				<audio id="sn">
+					<source src="sounds/V/Velociraptor.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="sound-pronounce" onclick="plays('sp')">
+                <h1 class="dino-pron"><span class="sec">vel-</span><span class="prim">OSS-</span><!--
+                    --><span class="sec">ee-</span><span class="prim">rap-</span><!--
+                    --><span class="sec">tor</span></h1>
+				<audio id="sp">
+					<source src="sounds/V/Velociraptor-Pronounce.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			
+		<!--End of sound-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+
+	<a class="arrow prev" href="Utahraptor.html">Uu</a>
+	<a class="arrow next" href="Wannanosaurus.html">Ww</a>
+	
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

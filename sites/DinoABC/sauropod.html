@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Sauropod</title>
+
+	<link href="css/dino.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background: url(pics/bg/bg76.jpg) repeat #000;
+		}
+		:root {
+    		--primary: purple;
+    		--secondary: #008000;
+        }
+        .images {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .header h1 {
+            text-decoration: underline #2E2E1F wavy;
+            line-height: 100%;
+            font-size: 300%;
+            color: var(--secondary);
+        }
+        .header p {
+            color: var(--primary);
+        }
+        .arrow {
+            position: fixed;
+            top: 48%;
+            width: fit-content;
+            font-size: 300%;
+            color: var(--primary);
+        }
+        .prev {
+        left: 1%;
+        }
+        .next {
+        left: 91%;
+        }
+        @media screen and (min-width: 550px) {
+            .arrow {
+                font-size: 400%;
+            }
+        }
+    </style>
+	
+</head>
+
+
+<body>
+	<div class="main">
+
+		<div class="navigation">
+			
+			<h2 id="top" onclick="showMenu('nav-menu','nav-settings', 'nav-settings')">&#9776 <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dinosaurs.html">Dinosaurs</a></li>
+					<li onclick="showMenu('cat','nav-settings', 'nav-settings')">Categories</a>
+						<ul id="cat" class="cats">
+							<li><a href="types.html">Type</a></li>
+							<li><a href="diets.html">Diet</a></li>
+							<li><a href="lived.html">Era</a></li>
+							<li><a href="found.html">Found</a></li>
+						</ul>
+					</li>
+					<li><a href="sources.html">Sources</a></li>
+				</ul>
+			<!--End of menu-->
+			</div>
+			<h2 id="set" onclick="showMenu('nav-settings', 'nav-menu', 'cat')">&#9881</h2>
+			<div id="nav-settings" class="navigation-settings">
+				Volume: &nbsp&nbsp&nbsp<span class="slider" onchange="volumeLevel()">
+					<input type="range" id="vol" step="1"
+				min="0" max="100" value="100"/></span>
+				<span id="volPic" onclick="unMute()">&#X1F50A</span>
+			
+			<!--End of settings-->
+			</div>
+`
+		<!--End of navigation-->
+		</div>
+
+		<div class="header">
+            <h1>Sauropod</h1>
+            <p>A large plant-eating dinosaur that walked on all four of its large limbs, had 
+                a long neck, long tail, and small head.</p>
+		</div>
+
+		<div id="pics" class="pictures">
+            <a href="apatosaurus.html"><h2>Apatosaurus</h2>
+                <img src="pics/apatosaurus.jpg" alt="Apatosaurus" class="images"/></a>
+            <a href="neuquenosaurus.html"><h2>Neuquenosaurus</h2>
+                <img src="pics/neuquenosaurus.jpg" alt="Neuquenosaurus" class="images"/></a>
+            <a href="quaesitosaurus.html"><h2>Quaesitosaurus</h2>
+                <img src="pics/quaesitosaurus.jpg" alt="Quaesitosaurus" class="images"/></a>
+            <a href="rhoetosaurus.html"><h2>Rhoetosaurus</h2>
+                <img src="pics/rhoetosaurus.jpg" alt="Rhoetosaurus" class="images"/></a>
+            <a href="yimenosaurus.html"><h2>Yimenosaurus</h2>
+                <img src="pics/yimenosaurus.jpg" alt="Yimenosaurus" class="images"/></a>
+			
+			
+		<!--End of pictures-->
+		</div>
+		
+		
+	<!--End of main-->
+	</div>
+	
+	<a class="arrow prev" href="s-theropod.html">&#10094;</a>
+    <a class="arrow next" href="armored.html">&#10095;</a>
+    
+	<script src="js/dinos.js"></script>
+</body>
+
+
+
+</html>

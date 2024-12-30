@@ -6,24 +6,22 @@ body {
   background-size: 400px;
   background-attachment: fixed;
 }
-
 body h1, body h2, body h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 a {
-  color: #ff6666;
-  font-family: 'Montserrat Alternates', sans-serif;
+  color: rgb(255, 102, 102);
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 p, label, input {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .jumbotron {
   background-color: transparent;
 }
-
 .jumbotron .navbar {
   background-color: rgba(230, 230, 230, 0.2);
   padding: 0px;
@@ -48,53 +46,43 @@ p, label, input {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
-
 .aboutMain h1 {
-  color: #660000;
+  color: rgb(102, 0, 0);
   font-weight: bolder;
   background-color: rgba(230, 230, 230, 0.4);
   text-decoration: underline;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-style: double;
 }
 
 .services {
   background-color: rgba(128, 128, 128, 0.9);
 }
-
 .services h1 {
-  color: #660000;
+  color: rgb(102, 0, 0);
   font-weight: bolder;
   background-color: white;
   text-decoration: underline;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-style: double;
 }
-
 .services h2 {
-  text-shadow: 2px 1px #660000;
+  text-shadow: 2px 1px rgb(102, 0, 0);
 }
-
 .services p {
-  color: #660000;
+  color: rgb(102, 0, 0);
   background-color: rgba(0, 0, 0, 0.2);
   font-weight: 550;
   padding: 3px 5px 3px 3px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .services .modal-content {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .services .modal-header {
   border: none;
-  text-shadow: 2px 1px #660000;
+  text-shadow: 2px 1px rgb(102, 0, 0);
   background-color: rgba(128, 128, 128, 0.9);
 }
-
 .services .modal-body p {
   color: white;
 }
@@ -112,7 +100,6 @@ p, label, input {
   max-width: 350px;
   max-height: 350px;
 }
-
 .carousel-indicators {
   position: relative !important;
   top: 450px;
@@ -127,41 +114,34 @@ p, label, input {
   color: white;
   padding-top: 20px;
 }
-
 .infoBox div {
-  color: gray;
+  color: rgb(128, 128, 128);
 }
 
 #quoteForm #submission button {
   border: darkslateblue 3px outset;
 }
-
 #quoteForm input {
   background-color: rgba(128, 128, 128, 0.9);
-  color: #660000;
+  color: rgb(102, 0, 0);
   font-weight: bold;
 }
-
 #quoteForm label {
-  color: #660000;
+  color: rgb(102, 0, 0);
   font-weight: bolder;
 }
-
 #quoteForm h1 {
-  color: #660000;
+  color: rgb(102, 0, 0);
   font-weight: bolder;
   background-color: rgba(128, 128, 128, 0.9);
   text-decoration: underline;
-  -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-style: double;
 }
-
 #quoteForm h2, #quoteForm h4 {
-  text-shadow: 2px 1px #660000;
+  text-shadow: 2px 1px rgb(102, 0, 0);
 }
 
 #footerBar {
   background-color: rgba(230, 230, 230, 0.2);
   padding: 0px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
